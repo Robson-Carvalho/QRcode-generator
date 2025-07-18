@@ -45,10 +45,14 @@
 <h4>▶️ Execução com Docker</h4>
 
 ```bash
-# 1. Build da imagem
+# 1. Clone e acesso do repositório  
+git clone https://github.com/Robson-Carvalho/QRcode-generator.git
+cd QRcode-generator
+
+# 2. Build da imagem
 docker build -t qrcode-generator .
 
-# 2. Execute o container com as variáveis de ambiente
+# 3. Execute o container com as variáveis de ambiente
 docker run --env-file .env -p 8080:8080 qrcode-generator
 ```
 
